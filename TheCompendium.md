@@ -23,3 +23,12 @@ Problem 1
 Problem 1
 
 [Problem](https://github.com/ViestursMathPolo/MathPolo/blob/main/Geometry/Circles/Problem1/Problem.pdf) [Solution](https://github.com/ViestursMathPolo/MathPolo/blob/main/Geometry/Circles/Problem1/Solution.pdf) [AI response](https://github.com/ViestursMathPolo/MathPolo/blob/main/Geometry/Circles/Problem1/AIanswerGPT5-3.pdf) [AI evaluation](https://github.com/ViestursMathPolo/MathPolo/blob/main/Geometry/Circles/Problem1/AIevaluation.pdf)
+
+## Physics
+### Classical Mechanics
+
+&nbsp;
+
+Problem 1
+
+[Problem](https://github.com/ViestursMathPolo/MathPolo/blob/main/Physics/Classical_Mechanics/Problem1/Problem.pdf) [Solution](https://github.com/ViestursMathPolo/MathPolo/blob/main/Physics/Classical_Mechanics/Problem1/Solution.pdf) [AI response](https://github.com/ViestursMathPolo/MathPolo/blob/main/Physics/Classical_Mechanics/Problem1/AIanswerGPT5-3.pdf) [AI drawing](https://github.com/ViestursMathPolo/MathPolo/blob/main/Physics/Classical_Mechanics/Problem1/AIdrawing.png) [AI evaluation](https://github.com/ViestursMathPolo/MathPolo/blob/main/Physics/Classical_Mechanics/Problem1/AIevaluation.pdf)

@@ -1,0 +1,89 @@
+\documentclass{article}
+\usepackage[margin=3cm]{geometry}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\linespread{1.5}
+
+\begin{document}
+{\bf Solution to Problem 1}
+
+Assume at time $t=t_{1}$ the particle $P$ is at point $A_{1}$ and at time $t_{2}>t_{1}$ it is at point $A_{2}$. Denote with $\Delta t$ the difference $t_2-t_1$. Denote with $s$ the distance between $A_2$ and $A_1$.
+
+At time $t_{3}>t_{2}$ the particle is at point $A_3$. Distance between $A_3$ and $A_2$ is equal to $s$ and the difference $t_3-t_2$ is equal to $\Delta t$. Points $A_1$, $A_2$, $A_3$ lie on a circle with radius $r$ and centre $O$.
+
+At $t_{1}$ the particle $P$ has velocity $\vec{v}_1$ with magnitude $v$ and at $t_2$ the particle has velocity $\vec{v}_{2}$ with magnitute $v$. See Figure \ref{fig:fig1}.
+
+Denote with $\theta$ the angle $\angle A_1OA_2$. From a simple trigonometric calculation we obtain that the angle $\angle O_2O_1O_3$ is equal to $\frac{\theta}{2}$. 
+
+We decompose $v_{1}$ and $v_{2}$ into their orthogonal $x$ and $y$ components, shown in Figure \ref{fig:fig1}. The positive direction of the $y$ axis points from $O$ to $A_2$.
+
+
+\begin{equation}
+\vec{v}_1=v\cos\left( \frac{\theta}{2} \right) \vec{\hat{i}}+v\sin\left(\frac{\theta}{2}\right)\vec{\hat{j}}, 
+\end{equation}
+\begin{equation}
+\vec{v}_2=v\cos\left( \frac{\theta}{2} \right) \vec{\hat{i}}-v\sin\left(\frac{\theta}{2}\right)\vec{\hat{j}}, 
+\end{equation}
+
+where $\vec{\hat{i}}$ and $\vec{\hat{j}}$ denote the unit vectors in the positive direction of the $x$ and $y$ axes, respectively.
+
+The difference of the velocities $\Delta \vec{v}=\vec{v}_2-\vec{v}_1$ is equal to $-2v\sin{\frac{\theta}{2}}\vec{\hat{j}}$.
+
+The acceleration $\vec{a}$ is defined as $\frac{\vec{v}_2-\vec{v}_1}{t_2-t_1}=\frac{\Delta v}{\Delta t}$. Combing the preceding results we obtain
+
+\begin{equation}
+  \vec{a}=\frac{-2v\sin\left(\frac{\theta}{2}\right)}{\Delta t}\vec{\hat{j}}.
+  \label{eq:a1}
+\end{equation}
+
+It can be seen from \eqref{eq:a1} that the acceleration points to the centre $O$ of the circle, shown in Figure \ref{fig:fig1}.
+
+According to the cosine law, the displacement $s$ can be expressed in terms of the radius $r$ and the angle $\theta$ as
+
+\begin{equation}
+  s=\sqrt{r^2+r^2-2r^2\cos\left(\theta\right)}.
+  \label{eq:s}
+\end{equation}
+
+In the small angle approximation $\theta\approx0$ and $\cos\left(\theta\right)\approx 1-\frac{\theta^2}{2}$. The result \eqref{eq:s} becomes
+
+\begin{equation}
+  s=r\theta
+\end{equation}
+
+The time of travel $\Delta t$ between points $A_{1}$ and $A_2$ is $\frac{s}{v}$. In the small angle approximation
+\begin{equation}
+  \Delta t=\frac{r\theta}{v}.
+  \label{eq:v}
+\end{equation}
+
+Combing \eqref{eq:a1} and \eqref{eq:v} we obtain
+
+\begin{equation}
+  \vec{a}=\frac{-2v^2\sin\left(\frac{\theta}{2}\right)}{r\theta}\vec{\hat{j}}.
+  \label{eq:a2}
+\end{equation}
+
+In the small angle approximation $\sin\left(\frac{\theta}{2}\right)=\frac{\theta}{2}$. Hence
+
+\begin{equation}
+  \vec{a}=\frac{-v^2}{r}\vec{\hat{j}}.
+  \label{eq:a3}
+\end{equation}
+
+The magnitute $a$ of $\vec{a}$ is
+
+\begin{equation}
+  a=\frac{v^2}{r}.
+\end{equation}
+
+In summary, the acceleration points to the centre of the circle and its magnitude is $a=\frac{v^2}{r}$.
+
+\begin{figure}
+  \centering
+  \includegraphics[width=0.9\textwidth]{Figures/fig1}
+  \caption{Solution to Problem 1}
+  \label{fig:fig1}
+\end{figure}
+\end{document}
