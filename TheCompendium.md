@@ -24,6 +24,15 @@ Problem 1
 
 [Problem](https://github.com/ViestursMathPolo/MathPolo/blob/main/Geometry/Circles/Problem1/Problem.pdf) [Solution](https://github.com/ViestursMathPolo/MathPolo/blob/main/Geometry/Circles/Problem1/Solution.pdf) [AI response](https://github.com/ViestursMathPolo/MathPolo/blob/main/Geometry/Circles/Problem1/AIanswerGPT5-3.pdf) [AI evaluation](https://github.com/ViestursMathPolo/MathPolo/blob/main/Geometry/Circles/Problem1/AIevaluation.pdf)
 
+&nbsp;
+
+### Inequalities
+
+Problem 1
+
+[Problem](https://github.com/ViestursMathPolo/MathPolo/blob/main/Inequalities/Problem1/Problem.pdf) [Solution](https://github.com/ViestursMathPolo/MathPolo/blob/main/Inequalities/Problem1/Solution.pdf) [AI response](https://github.com/ViestursMathPolo/MathPolo/blob/main/Inequalities/Problem1/AIanswerGPT5-3.pdf) [AI evaluation](https://github.com/ViestursMathPolo/MathPolo/blob/main/Inequalities/Problem1/AIevaluation.pdf)
+
+
 ## Physics
 ### Classical Mechanics
 

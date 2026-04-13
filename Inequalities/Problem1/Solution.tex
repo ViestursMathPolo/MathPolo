@@ -1,0 +1,43 @@
+\documentclass{article}
+\usepackage{geometry}[margin=1cm]
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\linespread{1.3}
+           
+\begin{document}
+           
+{\bf Solution to Problem 1}
+
+Replace each $a$, $b$, $c$ with $\frac{a+b+c}{3}$.
+
+We need to show that 
+
+\begin{equation*}
+  \sqrt{a}+\sqrt{b}+\sqrt{c}\overset{}{\leq}3\sqrt{\frac{a+b+c}{3}}.
+\end{equation*}
+
+Now square each side:
+
+\begin{equation*}
+  a+b+c+2\sqrt{ab}+2\sqrt{bc}+\sqrt{ca}\overset{?}{\leq}3\left(a+b+c\right).
+\end{equation*}
+
+By rearranging the terms we obtain:
+
+\begin{equation*}
+  0\overset{?}{\leq}a+b+c-\sqrt{ab}-\sqrt{bc}-\sqrt{ca}.
+\end{equation*}
+
+
+The RHS of the last equation can be expressed as a sum of squares:
+
+\begin{equation*}
+  \frac{1}{2}\left(\left(\sqrt{a}-\sqrt{b}\right)^2+\left(\sqrt{b}-\sqrt{c}\right)^2+\left(\sqrt{c}-\sqrt{a}\right)^2\right),
+\end{equation*}
+
+which is always $\geq0$.
+
+qed
+
+\end{document}
