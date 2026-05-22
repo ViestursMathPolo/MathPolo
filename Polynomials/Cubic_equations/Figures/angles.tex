@@ -1,0 +1,48 @@
+\documentclass[tikz, border=5pt]{standalone}
+\usetikzlibrary{arrows.meta}
+\usetikzlibrary{decorations.markings}
+    
+    \newcommand{\xmarker}[2]{%
+      \draw[thin,#2] (-#1,-#1)--(#1,#1);
+      \draw[thin,#2] (-#1,#1)--(#1,-#1);
+    }
+\begin{document}
+\begin{tikzpicture}
+  \def\r{2}
+  \def\l{3}
+  \draw [->](-\l, 0)--(\l, 0) node [pos=1.1, above]{$\cos\left(\phi\right)$};
+  \draw [->](0,-\l)--(0, \l) node [right]{$\sin\left(\phi\right)$};
+  \draw [postaction={
+          decorate,
+          decoration={
+            markings,
+            mark=at position 1 with {
+              \xmarker{2pt}{}
+            }
+          }
+        }](0,0)--({cos(0)*\r}, {sin(0)*\r}) node[pos=1, above] {$\phi=0$} node[pos=1, below]{$1$};
+  \draw [postaction={
+          decorate,
+          decoration={
+            markings,
+            mark=at position 1 with {
+              \xmarker{2pt}{}
+            }
+          }
+        }
+      ] (0,0)--({cos(120)*\r}, {sin(120)*\r}) node[pos=1, above] {$\phi=\frac{2\pi}{3}$};
+  \draw [postaction={
+          decorate,
+          decoration={
+            markings,
+            mark=at position 1 with {
+              \xmarker{2pt}{}
+            }
+          }
+        }](0,0)--({cos(240)*\r}, {sin(240)*\r}) node[pos=1, below] {$\phi=\frac{4\pi}{3}$};
+  \draw [dashed] ({cos(120)*\r}, {sin(120)*\r})--({cos(120)*\r}, 0) node [pos=1, below]{$\frac{1}{2}$};
+
+  \draw [dashed] ({cos(120)*\r}, {sin(120)*\r})--(0, {sin(120)*\r}) node [pos=1, right]{$\frac{\sqrt{3}}{2}$};
+\end{tikzpicture}
+\end{document}
+

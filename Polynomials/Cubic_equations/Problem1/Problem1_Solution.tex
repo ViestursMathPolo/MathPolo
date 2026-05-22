@@ -1,0 +1,64 @@
+\documentclass{article}
+\usepackage[margin=2cm]{geometry}
+\usepackage{amsmath}
+\usepackage{xcolor}
+\usepackage{empheq}
+\definecolor{lightblue}{RGB}{235,245,255}
+\begin{document}
+{\bf Solution of Problem 1}
+
+By repeated application of
+
+\[
+\cos\left(a+b\right)=\cos\left(a\right)\cos\left(b\right)-\sin\left(a\right)\sin\left(b\right)
+\]
+
+and
+
+\[
+\sin\left(a+b\right)=\sin\left(a\right)\cos\left(b\right)+\cos\left(a\right)\sin\left(b\right)
+\]
+
+we find that
+
+\[
+\cos^3\left(x\right)-\frac{3}{4}\cos\left(x\right)-\frac{1}{4}\cos\left(3x\right)=0.
+\]
+
+The real root in $\cos\left(x\right)$ of the above equation is 
+
+\[
+\cos\left(x\right)=\sqrt[3]{
+  \frac{
+    \frac{\cos\left(3x\right)}{4}-\sqrt{\frac{\cos^2\left(3x\right)}{16}-\frac{4\cdot27}{64\cdot27}}}{2}
+}
++
+\sqrt[3]{
+  \frac{
+    \frac{\cos\left(3x\right)}{4}+\sqrt{\frac{\cos^2\left(3x\right)}{16}-\frac{4\cdot27}{64\cdot27}}}{2}
+},
+\]
+
+which simplifies to:
+
+\begin{equation}
+  \cos\left(x\right)=\frac{1}{2}\left(\sqrt[3]{\cos\left(3x\right)-i\sin\left(3x\right)}+\sqrt[3]{\cos\left(3x\right)+i\sin\left(3x\right)}\right).
+  \label{eq:sol}
+\end{equation}
+
+Eq. \eqref{eq:sol} can be further simplified to
+
+\[
+\cos\left(x\right)=\cos\left(\frac{1}{3}\arctan\left(\tan\left(3x\right)\right)\right)
+\]
+
+From Eq. \eqref{eq:sol} we also observe the following generalisation:
+
+\begin{empheq}[
+    box=\fcolorbox{blue}{lightblue}
+  ]{equation*}
+  \cos\left(x\right)=\frac{1}{2}\left(\sqrt[m]{\cos\left(mx\right)-i\sin\left(mx\right)}+\sqrt[m]{\cos\left(mx\right)+i\sin\left(mx\right)}\right).
+\end{empheq}
+
+
+\end{document}
